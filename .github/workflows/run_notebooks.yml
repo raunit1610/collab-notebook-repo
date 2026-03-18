@@ -2,7 +2,7 @@ name: Run Colab Notebook
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '30 20 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,4 +24,4 @@ jobs:
 
     - name: Run notebook
       run: |
-        jupyter nbconvert --to notebook --execute IPL_Data_Fetch_(API's).ipynb --output executed_ipl.ipynb
+        jupyter nbconvert --to notebook --execute IPL_Data_Fetch.ipynb --output executed_ipl.ipynb

@@ -1,5 +1,6 @@
 pandas
 requests
 beautifulsoup4
-snowflake-connector-python
+lxml
+snowflake-connector-python[pandas]
 boto3
